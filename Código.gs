@@ -1,12 +1,12 @@
 function myFunction() {
 
-  /* Hola mundo DOCS */
+  /* Hola mundo Slides */
   
-  //Este código crea un nuevo documento llamado "Mi primer doc"
-  var newDoc = DocumentApp.create("Mi primer documento ");
+  //Este código crea una nueva presentación llamada "Mi primera slide"
+  var newSlide = SlidesApp.create("Mi primera slide");
 
   //URL de la sheet
-  Logger.log(newDoc.getUrl());
+  Logger.log(newSlide.getUrl());
 
 }
 
