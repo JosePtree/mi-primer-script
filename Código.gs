@@ -1,12 +1,12 @@
 function myFunction() {
 
-  /* Hola mundo Slides */
+  /* Hola mundo Forms */
   
-  //Este código crea una nueva presentación llamada "Mi primera slide"
-  var newSlide = SlidesApp.create("Mi primera slide");
+  //Este código crea un nuevo formulario llamado "Mi primer formulario"
+  var newForm = FormApp.create('Mi primer formulario');
 
-  //URL de la sheet
-  Logger.log(newSlide.getUrl());
+  //URL del formulario
+  Logger.log(newForm.getUrl());
 
 }
 
