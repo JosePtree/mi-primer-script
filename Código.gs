@@ -1,12 +1,13 @@
 function myFunction() {
 
-  /* Hola mundo Drive */
+  /* Hola mundo Gmail */
   
-  //Este código crea un nuevo folder llamado "Mi primer folder" dentro del drive
-  var newFolder = DriveApp.createFolder("Mi primer folder")
+  //Este código crea un nuevo borrador de correo con la fecha de hoy y lo envía a la dirección dada
+  var now = new Date();
+  var newDraft = GmailApp.createDraft("jose@ptree.com.mx", "Fecha exacta", "La fecha de hoy es: " + now.toString());
 
-  //URL del folder
-  Logger.log(newFolder.getUrl());
+  //Envia el borrador
+  newDraft.send();
 
 }
 
