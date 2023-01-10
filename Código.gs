@@ -1,13 +1,10 @@
 function myFunction() {
 
-  /* Hola mundo Gmail */
+  /* Hola mundo Calendario */
   
-  //Este código crea un nuevo borrador de correo con la fecha de hoy y lo envía a la dirección dada
+  //Este código crea un nuevo evento en el calendario, llamado "Mi primer evento", todo el día de hoy.
   var now = new Date();
-  var newDraft = GmailApp.createDraft("jose@ptree.com.mx", "Fecha exacta", "La fecha de hoy es: " + now.toString());
-
-  //Envia el borrador
-  newDraft.send();
+  var event = CalendarApp.getDefaultCalendar().createAllDayEvent('Mi primer evento', now);
 
 }
 
