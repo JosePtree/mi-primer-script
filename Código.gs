@@ -5,7 +5,7 @@ function myFunction() {
   //Este código crea un nuevo documento llamado "Mi primer doc"
   var newDoc = DocumentApp.create("Mi primer documento ");
 
-  //URL de la sheet
+  //URL del documento
   Logger.log(newDoc.getUrl());
 
 }
