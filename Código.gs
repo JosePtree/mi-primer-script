@@ -1,12 +1,12 @@
 function myFunction() {
 
-  /* Hola mundo SHEETS */
+  /* Hola mundo DOCS */
   
-  //Este código crea una nueva hoja de calculo llamada "Hola mundo" con 50 filas y 5 columnas
-  var ssNew = SpreadsheetApp.create("Mi primera sheet ", 50, 5);
+  //Este código crea un nuevo documento llamado "Mi primer doc"
+  var newDoc = DocumentApp.create("Mi primer documento ");
 
   //URL de la sheet
-  Logger.log(ssNew.getUrl());
+  Logger.log(newDoc.getUrl());
 
 }
 
