@@ -1,12 +1,12 @@
 function myFunction() {
 
-  /* Hola mundo Forms */
+  /* Hola mundo Drive */
   
-  //Este código crea un nuevo formulario llamado "Mi primer formulario"
-  var newForm = FormApp.create('Mi primer formulario');
+  //Este código crea un nuevo folder llamado "Mi primer folder" dentro del drive
+  var newFolder = DriveApp.createFolder("Mi primer folder")
 
-  //URL del formulario
-  Logger.log(newForm.getUrl());
+  //URL del folder
+  Logger.log(newFolder.getUrl());
 
 }
 
